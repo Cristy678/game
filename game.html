@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crazy Travelers</title>
+  <style>
+    /* Estilos CSS para tu juego */
+    body {
+      background-color: black; /* Fondo negro */
+      color: white; /* Texto blanco */
+      background-image: linear-gradient(to bottom right, #303030, #1a1a1a); /* Gradiente gris */
+    }
+
+    /* Estilo de los interruptores, adaptar a tu diseño */
+    .interruptor {
+      /* Estilo del interruptor */
+    }
+  </style>
+  <script>
+    // JavaScript para tu juego
+    // Función para activar los interruptores
+    function activarInterruptor(tiempo, indice) {
+      // Implementa la lógica para activar los interruptores en función del tiempo
+      if (tiempo === "presente") {
+        // Lógica para activar el interruptor en el presente
+        console.log("Interruptor en el presente activado");
+      } else if (tiempo === "pasado") {
+        // Lógica para activar el interruptor en el pasado
+        console.log("Interruptor en el pasado activado");
+      } else if (tiempo === "futuro") {
+        // Lógica para activar el interruptor en el futuro
+        console.log("Interruptor en el futuro activado");
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Contenedor del juego -->
+  <div id="juego">
+    <!-- Aquí puedes agregar tus elementos del juego, como los interruptores, botones, elementos del escenario, etc. -->
+    <button class="interruptor" onclick="activarInterruptor('presente', 0)">Interruptor en el Presente</button>
+    <button class="interruptor" onclick="activarInterruptor('pasado', 1)">Interruptor en el Pasado</button>
+    <button class="interruptor" onclick="activarInterruptor('futuro', 2)">Interruptor en el Futuro</button>
+  </div>
+</body>
+</html>
